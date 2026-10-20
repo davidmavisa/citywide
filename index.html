@@ -17,9 +17,9 @@
 <meta name="theme-color" content="#0b1020">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"EntertainmentBusiness","name":"Citywide DJ Services","url":"https://citywidedjservices.com.au/","description":"DJs for harbour cruises, party boats, corporate events and private parties in Sydney.","sameAs":["https://www.instagram.com/citywideentertainment/"],"email":"citywidedjservices@gmail.com","areaServed":{"@type":"City","name":"Sydney"},"priceRange":"$$","foundingDate":"2021"}
+{"@context":"https://schema.org","@type":"EntertainmentBusiness","name":"Citywide DJ Services","url":"https://citywidedjservices.com.au/","description":"DJs for harbour cruises, party boats, corporate events and private parties in Sydney.","sameAs":["https://www.instagram.com/citywidedjservices/","https://www.facebook.com/Citywidedjservices"],"email":"citywidedjservices@gmail.com","areaServed":{"@type":"City","name":"Sydney"},"priceRange":"$$","foundingDate":"2021"}
 </script>
 <style>
 :root{
@@ -33,7 +33,7 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font:16px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img,video{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3{font-family:Sora,Inter,sans-serif;line-height:1.15;letter-spacing:-.02em}
+h1,h2,h3{font-family:Montserrat,Inter,sans-serif;line-height:1.15;letter-spacing:-.02em}
 .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
 .grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:600;text-decoration:none;border:0;cursor:pointer;font-size:16px;transition:transform .15s,box-shadow .15s}
@@ -49,7 +49,7 @@ section{padding:88px 0}
 /* nav */
 nav{position:sticky;top:0;z-index:50;background:rgba(11,16,32,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
-.logo{display:flex;align-items:center;gap:10px;font-family:Sora;font-weight:800;font-size:18px;text-decoration:none}
+.logo{display:flex;align-items:center;gap:10px;font-family:Montserrat;font-weight:800;font-size:18px;text-decoration:none}
 .logo img{width:40px;height:40px;border-radius:50%}
 .nav-links{display:flex;gap:26px;align-items:center}
 .nav-links a{text-decoration:none;color:var(--muted);font-weight:500;font-size:15px}
@@ -64,7 +64,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .hero .wrap{position:relative;z-index:1;max-width:820px}
 .hero::before{inset:-30% auto auto 50%;transform:translateX(-50%);width:900px;height:700px}
 .hero p.lead{margin-left:auto;margin-right:auto}
-.hero-logo{display:block;width:150px;height:150px;margin:0 auto 22px;border-radius:50%;box-shadow:0 20px 50px -18px rgba(168,85,247,.55)}
+.hero-logo{display:block;width:300px;height:auto;margin:0 auto 18px;filter:drop-shadow(0 18px 40px rgba(168,85,247,.35))}
 .hero .ctas,.hero .ticks{justify-content:center}
 .hero h1{font-size:clamp(38px,6vw,64px);margin-bottom:20px}
 .hero p.lead{font-size:19px;color:var(--muted);max-width:520px;margin-bottom:30px}
@@ -81,7 +81,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--bg2);padding:26px 0}
 .strip .wrap{display:flex;align-items:center;gap:28px;flex-wrap:wrap;justify-content:center}
 .strip small{color:var(--muted);font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
-.strip b{font-family:Sora;font-weight:700;font-size:18px;color:#cdd5ee}
+.strip b{font-family:Montserrat;font-weight:700;font-size:18px;color:#cdd5ee}
 
 /* cards */
 .grid{display:grid;gap:20px}
@@ -108,7 +108,7 @@ nav .wrap{display:flex;align-items:center;justify-content:space-between;height:6
 /* steps */
 .steps{counter-reset:s}
 .steps .card{position:relative;padding-top:64px}
-.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:24px;left:28px;font-family:Sora;font-weight:800;font-size:15px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:#0b1020}
+.steps .card::before{counter-increment:s;content:counter(s);position:absolute;top:24px;left:28px;font-family:Montserrat;font-weight:800;font-size:15px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--grad);color:#0b1020}
 
 /* music */
 .chips{display:flex;flex-wrap:wrap;gap:10px}
@@ -176,7 +176,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .mbar{display:flex}
   .nav-links{display:none}
   .hero{padding:64px 0 72px}
-  .hero-logo{width:120px;height:120px}
+  .hero-logo{width:230px}
   .hero .ctas .btn{flex:1;white-space:nowrap}
   form{padding:22px}
 }
@@ -199,13 +199,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <img class="hero-logo" src="assets/logo-full.jpg" alt="Citywide DJ Services logo" width="150" height="150">
-      <span class="eyebrow">Citywide DJ Services</span>
+      <img class="hero-logo" src="assets/logo-hero.png" alt="Citywide DJ Services logo" width="300" height="287">
       <h1>Sydney DJs for <span class="grad">boats, parties &amp; events.</span></h1>
       <p class="lead">Professional DJs for harbour cruises, corporate events and private parties across Sydney. We read the room, bring our own gear, and turn up ready to go.</p>
       <div class="ctas">
         <a class="btn btn-main" href="#quote">Get a free quote</a>
-        <a class="btn btn-ghost" href="https://ig.me/m/citywideentertainment" target="_blank" rel="noopener">💬 DM us on Instagram</a>
+        <a class="btn btn-ghost" href="https://ig.me/m/citywidedjservices" target="_blank" rel="noopener">💬 DM us on Instagram</a>
       </div>
       <div class="ticks">
         <span>Playing Sydney events since 2021</span>
@@ -300,7 +299,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <h2 style="font-size:clamp(28px,4vw,40px);margin-bottom:12px">Let's make your event one to remember</h2>
       <p style="color:var(--muted);font-size:18px">Tell us a few details and we'll reply within 24 hours. Prefer to chat? DM us on Instagram or email any time.</p>
       <div class="contact-ways">
-        <a class="way" href="https://ig.me/m/citywideentertainment" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span><span><small>Instagram DM</small><b>@citywideentertainment</b></span></a>
+        <a class="way" href="https://ig.me/m/citywidedjservices" target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg></span><span><small>Instagram DM</small><b>@citywidedjservices</b></span></a>
         <a class="way" href="mailto:citywidedjservices@gmail.com"><span class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span><small>Email</small><b>citywidedjservices@gmail.com</b></span></a>
       </div>
     </div>
@@ -338,12 +337,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <footer>
   <div class="wrap">
     <span>© <span id="yr">2026</span> Citywide DJ Services · Sydney, NSW</span>
-    <span><a href="https://ig.me/m/citywideentertainment" target="_blank" rel="noopener">Instagram</a> · <a href="mailto:citywidedjservices@gmail.com">citywidedjservices@gmail.com</a></span>
+    <span><a href="https://ig.me/m/citywidedjservices" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.facebook.com/Citywidedjservices" target="_blank" rel="noopener">Facebook</a> · <a href="mailto:citywidedjservices@gmail.com">citywidedjservices@gmail.com</a></span>
   </div>
 </footer>
 
 <div class="mbar">
-  <a class="btn btn-ghost" href="https://ig.me/m/citywideentertainment" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg> DM</a>
+  <a class="btn btn-ghost" href="https://ig.me/m/citywidedjservices" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg> DM</a>
   <a class="btn btn-main" href="#quote">Get a quote</a>
 </div>
 
