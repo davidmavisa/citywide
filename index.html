@@ -158,6 +158,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 .mbar{display:none;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;gap:10px;padding:10px;border-radius:18px;background:rgba(20,28,51,.92);backdrop-filter:blur(12px);border:1px solid var(--line)}
 .mbar a{flex:1;padding:12px 8px;font-size:15px}
 
+.hero-bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero-bg video{width:100%;height:100%;object-fit:cover;opacity:.62}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,16,32,.55) 0%,rgba(11,16,32,.72) 60%,var(--bg) 100%)}
+.reels{display:grid;gap:18px;margin-bottom:18px}
+.reels.party{grid-template-columns:repeat(3,1fr)}
+.reels.setup{grid-template-columns:repeat(3,1fr);max-width:860px;margin-left:auto;margin-right:auto}
+.reel{position:relative;margin:0;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);aspect-ratio:9/16;background:var(--card);box-shadow:0 20px 50px -20px rgba(0,0,0,.6)}
+.reel video{width:100%;height:100%;object-fit:cover;display:block}
+.party .reel{aspect-ratio:4/5}
+.party .reel video{object-position:50% 78%}
+.party .reel video[poster$="p_oct5b.jpg"]{object-position:50% 52%}
+.tiles{display:grid;gap:18px}
+.tiles.t3{grid-template-columns:repeat(3,1fr)}
+.tiles.t4{grid-template-columns:repeat(4,1fr)}
+.tiles img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;border-radius:var(--r);border:1px solid var(--line);transition:transform .4s ease}
+.tiles img:hover{transform:scale(1.02)}
+.tiles.feature img{aspect-ratio:16/10}
+.tiles.feature .b-tall{grid-row:span 2;aspect-ratio:auto;height:100%}
+@media (max-width:960px){.tiles.feature .b-tall{grid-row:span 2}.reels.party{grid-template-columns:repeat(2,1fr)}.tiles.t3,.tiles.t4{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.reels,.tiles{gap:10px}.reels.setup{grid-template-columns:repeat(3,1fr)}}
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
 .reveal.in{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.live i{animation:none}html{scroll-behavior:auto}}
@@ -197,6 +217,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </nav>
 
 <header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true">
+    <video autoplay muted loop playsinline preload="auto" poster="assets/hero-poster.jpg"><source src="assets/hero3.mp4" type="video/mp4"></video>
+  </div>
   <div class="wrap">
     <div>
       <img class="hero-logo" src="assets/logo-hero.png" alt="Citywide DJ Services logo" width="300" height="287">
@@ -228,6 +251,41 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/><path d="M3 13h18"/></svg></div><h3>Corporate &amp; Christmas</h3><p>Background music during dinner, then a proper dance floor when it's time.</p></div>
       <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l-6 3 3-6"/><path d="M6 15l3 3"/><path d="M14 4l1 2"/><path d="M20 10l-2 1"/><path d="M19 4l-5 5"/><path d="M9 11l4 4"/></svg></div><h3>Birthdays &amp; milestones</h3><p>21sts, 30ths, 40ths and house parties with the music your guests actually love.</p></div>
       <div class="card reveal"><div class="ic"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16l-8 9z"/><path d="M12 13v7"/><path d="M8 20h8"/></svg></div><h3>Bars &amp; venues</h3><p>One-off nights or regular residencies for bars, clubs and function venues.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="action" id="action" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The party</span>
+      <h2>Sydney Harbour, our dance floor</h2>
+      <p>Real guests on real nights, all filmed at our own gigs.</p>
+    </div>
+    <div class="reels party">
+      <figure class="reel reveal"><video muted loop playsinline preload="none" poster="assets/p_nov21.jpg"><source src="assets/p_nov21.mp4" type="video/mp4"></video></figure>
+      <figure class="reel reveal"><video muted loop playsinline preload="none" poster="assets/p_feb28.jpg"><source src="assets/p_feb28.mp4" type="video/mp4"></video></figure>
+      <figure class="reel reveal"><video muted loop playsinline preload="none" poster="assets/p_oct5b.jpg"><source src="assets/p_oct5b.mp4" type="video/mp4"></video></figure>
+      <figure class="reel reveal"><video muted loop playsinline preload="none" poster="assets/p_may16.jpg"><source src="assets/p_may16.mp4" type="video/mp4"></video></figure>
+      <figure class="reel reveal"><video muted loop playsinline preload="none" poster="assets/p_nov22.jpg"><source src="assets/p_nov22.mp4" type="video/mp4"></video></figure>
+      <figure class="reel reveal"><video muted loop playsinline preload="none" poster="assets/p_oct17.jpg"><source src="assets/p_oct17.mp4" type="video/mp4"></video></figure>
+    </div>
+  </div>
+</section>
+
+<section class="action" id="setup" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">The setup</span>
+      <h2>Pro gear, set up right</h2>
+      <p>Quality sound, lighting and decks, set up and tested before your guests arrive.</p>
+    </div>
+    <div class="tiles t3 feature">
+      <img class="reveal b-tall" src="assets/setup_rig.jpg" alt="Rane DJ decks, laptop, speaker and GigBAR lighting set up in a harbour cruiser wheelhouse" loading="lazy">
+      <img class="reveal" src="assets/setup_function.jpg" alt="DJ booth and speakers set up on a Sydney function boat" loading="lazy">
+      <img class="reveal" src="assets/setup_booth.jpg" alt="Professional DJ booth with wireless microphones on a function boat" loading="lazy">
+      <img class="reveal" src="assets/setup_wheel.jpg" alt="DJ decks inside a timber cruiser with the Barangaroo skyline" loading="lazy">
+      <img class="reveal" src="assets/setup_timber.jpg" alt="DJ decks and Serato screen with guests dancing on a Sydney party boat" loading="lazy">
     </div>
   </div>
 </section>
@@ -365,6 +423,10 @@ f.addEventListener('submit', async ev => {
   }
   b.disabled = false; b.textContent = 'Send my enquiry';
 });
+</script>
+<script>
+(function(){var vs=document.querySelectorAll('.reel video');if(!('IntersectionObserver' in window)){vs.forEach(function(v){v.play()});return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){var v=e.target;if(e.isIntersecting){v.play().catch(function(){})}else{v.pause()}})},{threshold:.35});vs.forEach(function(v){io.observe(v)})})();
 </script>
 </body>
 </html>
